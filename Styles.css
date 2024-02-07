@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fce4ec; /* Light pink background */
+    color: #333; /* Dark text color */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f44336; /* Red header background */
+    color: white; /* White text color */
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+button {
+    background-color: #ff4081; /* Pink button color */
+    color: white; /* White text color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #f50057; /* Darker pink color on hover */
+}
+
+/* Heart animation */
+@keyframes heartbeat {
+    0% {
+        transform: scale(0.75);
+    }
+    20% {
+        transform: scale(1);
+    }
+    40% {
+        transform: scale(0.75);
+    }
+    60% {
+        transform: scale(1);
+    }
+    80% {
+        transform: scale(0.75);
+    }
+    100% {
+        transform: scale(0.75);
+    }
+}
+
+#heart {
+    animation: heartbeat 1.5s infinite;
+}
